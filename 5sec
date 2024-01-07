@@ -1,0 +1,71 @@
+local function createGui(parent)
+	--ScreenGui1--
+	local ScreenGui1 = Instance.new("ScreenGui",parent)
+	ScreenGui1["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling
+	----ScreenGui1----
+	--TextButton2--
+	local TextButton2 = Instance.new("TextButton",ScreenGui1)
+	TextButton2["TextColor3"] = Color3.new(0, 0, 0)
+	TextButton2["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton2["Text"] = "wanna we will speeeee"
+	TextButton2["Font"] = Enum.Font.Code
+	TextButton2["Position"] = UDim2.new(0.837570608, 0, 0.108142532, 0)
+	TextButton2["TextSize"] = 14
+	TextButton2["Size"] = UDim2.new(0, 200, 0, 50)
+	TextButton2["BorderSizePixel"] = 0
+	TextButton2["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextButton2----
+	--Script3--
+	local Script3 = Instance.new("Script",TextButton2)
+	----Script3----
+	spawn(function() --Source for Script3
+		local script = Script3
+		script.Parent.Activated:Connect(function()
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+			wait(1)
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 20
+			wait(5)
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 30
+			wait(5)
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 40
+			wait(5)
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
+			wait(5)
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 60
+			wait(5)
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 70
+			wait(5)
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 80
+			wait(5)
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 90
+			wait(5)
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+			wait(5)
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
+			wait(5)
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 140
+			wait(5)
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 160
+			wait(5)
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 180
+			wait(5)
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 200
+			wait(5)
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 240
+			wait(5)
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 280
+			wait(5)
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 400
+			wait(5)
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 500
+			wait(5)
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 600
+			wait(5)
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 800
+			wait(5)
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 1000
+		end)
+		
+	end)
+end
+createGui(game.CoreGui) --coregui by default you should but change it
